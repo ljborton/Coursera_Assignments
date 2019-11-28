@@ -1,0 +1,26 @@
+---
+title: "Assignment Week 2"
+
+always_allow_html: yes
+---
+
+### April 10, 2017
+
+```{r,echo=FALSE, warning=FALSE}
+#Ensure the leaflet package is installed
+library(leaflet)
+shellicon <- makeIcon(
+  iconUrl = "https://upload.wikimedia.org/wikipedia/en/e/e8/Shell_logo.svg",
+  iconWidth = 31*215/230, iconHeight = 31,
+  iconAnchorX = 31*215/230/2, iconAnchorY = 16
+)
+
+my_map <- leaflet() %>% 
+        addTiles() %>%
+        addMarkers(lat = 29.7866627,lng = -95.606597, popup="Shell (where I work)",icon=shellicon) 
+
+my_map
+```
+
+
+

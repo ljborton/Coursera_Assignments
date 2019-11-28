@@ -1,0 +1,67 @@
+---
+title       : Week 4 Assignment
+subtitle    : Prestige of Occupations
+author      : Laura Borton
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+
+---
+
+## How prestigious is your job???
+
+### Have you ever wondered if your job may be considered prestigious based on something other than the job itself?  Then you need the Prestige App!
+
+
+---
+
+## The App
+
+
+This app determines the prestige your job has based on your education level.
+
+In the app, moving the slider bar allows the user to determine the predicted prestige for a given education level.  The next page shows screenshot of its beauty!
+
+---
+
+## Screenshot of the App 
+
+```{r, echo=FALSE, warning=FALSE}
+library(webshot)
+appshot("Capture", "Capture.png")
+```
+
+
+---
+
+# Data 
+
+The Prestige data set consists of 102 Canadian Occupations and six variables listed below: 
+
+
+education
+Average education of occupational incumbents, years, in 1971.
+
+income
+Average income of incumbents, dollars, in 1971.
+
+women
+Percentage of incumbents who are women.
+
+prestige
+Pineo-Porter prestige score for occupation, from a social survey conducted in the mid-1960s.
+
+census
+Canadian Census occupational code.
+
+type
+Type of occupation. A factor with levels (note: out of order): bc, Blue Collar; prof, Professional, Managerial, and Technical; wc, White Collar.
+
+
+
+
+
